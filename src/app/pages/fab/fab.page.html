@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Float Action Button</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Aula de Fab</h3>
+  
+  <!--TOPO ESQUERDA-->
+  <ion-fab vertical="top" horizontal="start">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <!--TOPO DIREITA-->
+  <ion-fab  vertical="top" horizontal="end">
+    <ion-fab-button color="dark">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <!--BOTTOM DIREITA-->
+  <ion-fab vertical="bottom" horizontal="end" (click)="saved()">
+    <ion-fab-button color="danger">
+      <ion-icon name="save"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <!--CENTRALIZE direira-->
+  <ion-fab vertical="center" horizontal="end">
+    <ion-fab-button color="tertiary">
+      <ion-icon name="heart"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <!--CENTRO ESQUERDA-->
+  <ion-fab vertical="center">
+    <ion-fab-button color="tertiary">
+      <ion-icon name="people"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <!--ESQUERDA BOTTOM-->
+  <ion-fab vertical="bottom">
+    <ion-fab-button color="tertiary">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+  <!--CENTRAL-->
+  <ion-fab vertical="center" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="share"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-icon name="logo-vimeo"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  
+
+</ion-content>

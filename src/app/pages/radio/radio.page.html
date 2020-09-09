@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Radio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-radio-group value="biff">
+      <ion-list-header>
+        <ion-label>Name</ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Normal</ion-label>
+        <ion-radio slot="start" value="biff"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Radio a direita</ion-label>
+        <ion-radio slot="end" value="griff"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Mode Android</ion-label>
+        <ion-radio mode="md" slot="start"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Mode IOS</ion-label>
+        <ion-radio slot="start" mode="ios"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Item desabilitado</ion-label>
+        <ion-radio disabled="true" slot="start"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Item red</ion-label>
+        <ion-radio color="danger" slot="start" value="buford"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-content>

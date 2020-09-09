@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Check Box</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <ion-item>
+    <ion-label>Default</ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item> 
+
+  <ion-item>
+    <ion-label>Disabled</ion-label>
+    <ion-checkbox disabled="true"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Checked</ion-label>
+    <ion-checkbox checked="true"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Disabled + Checked</ion-label>
+    <ion-checkbox checked="true" disable="true"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Disabled</ion-label>
+    <ion-checkbox disabled="true"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Start</ion-label>
+    <ion-checkbox slot="start"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Primary</ion-label>
+    <ion-checkbox color="primary"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Secondary</ion-label>
+    <ion-checkbox color="secondary"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>danger</ion-label>
+    <ion-checkbox color="danger"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>dark</ion-label>
+    <ion-checkbox color="dark"></ion-checkbox>
+  </ion-item>
+
+  <h3>Meses</h3>
+  <ion-list>
+    <ion-item *ngFor="let itens of tabelaItens">
+      <ion-label>{{itens.nomeDoMes}}</ion-label>
+      <ion-checkbox checked="{{itens.marcado}}" [(ngModel)]="itens.marcado" color="danger"></ion-checkbox>
+    </ion-item >
+  </ion-list>
+  <ion-button expand="block" (click)="exibirMeses()">Exibir meses marcados</ion-button>
+  
+</ion-content>

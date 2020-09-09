@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Slides</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Efeito Flip</h3>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <img src="../../../assets/Rick-Morty.png">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../../../assets/spacemortyrick.png">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../../../assets/morty.jpg">
+    </ion-slide>
+  </ion-slides>
+
+  <br>
+  <h3>Efeito Cube</h3>
+  <ion-slides pager="true" [options]="slideCube">
+    <ion-slide>
+      <img src="../../../assets/Rick-Morty.png">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../../../assets/spacemortyrick.png">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../../../assets/morty.jpg">
+    </ion-slide>
+  </ion-slides>
+
+  <h3>Efeito Normal</h3>
+  <ion-slides pager="true">
+    <ion-slide>
+      <img src="../../../assets/Rick-Morty.png">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../../../assets/spacemortyrick.png">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../../../assets/morty.jpg">
+    </ion-slide>
+  </ion-slides>
+</ion-content>

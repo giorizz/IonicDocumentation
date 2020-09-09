@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Badge</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Usuários</ion-label>
+    <ion-badge slot="start">150</ion-badge>
+  </ion-item>
+
+    <ion-item>
+      <ion-label>Notificações</ion-label>
+      <ion-badge slot="end">{{notificacoes}}</ion-badge>
+    </ion-item>
+    
+  
+    <ion-item>
+      <ion-label>Produtos</ion-label>
+      <ion-badge color="danger" slot="end">1050</ion-badge>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Dinamicamente</ion-label>
+      <ion-badge color="dark" slot="end">{{dinamico}}</ion-badge>
+    </ion-item>
+</ion-content>

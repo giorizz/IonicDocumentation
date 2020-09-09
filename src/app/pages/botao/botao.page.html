@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-back-button></ion-back-button>
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>BOTÕES</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Botão padrao e com link</h3>
+  <ion-button>Nome do botão</ion-button>
+  <ion-button href="https://ionicframework.com/docs/api/button">Botão com Link</ion-button>
+
+  <h3>Botão com temas</h3>
+  <ion-button color="danger">Cor Danger</ion-button>
+  <ion-button color="dark">Cor Dark</ion-button>
+
+  <h3>Botão com expands</h3>
+  <ion-button expand="full">Full Button</ion-button>
+  <ion-button expand="block">Block Button</ion-button>
+
+  <h3>Botão com fill</h3>
+  <ion-button expand="full" fill="outline">Outline + Full</ion-button>
+  <ion-button expand="block" fill="outline">Outline + Block</ion-button>
+
+  <h3>Botão com round</h3>
+  <ion-button shape="round" fill="outline">Outline + Round</ion-button>
+  <ion-button shape="round">Outline + Round</ion-button>
+
+  <h3>Botão com icones</h3>
+  <ion-button>
+    <ion-icon slot="start" name="star"></ion-icon>
+    Left Icon
+  </ion-button>
+
+  <ion-button>
+    Right Icon
+    <ion-icon slot="end" name="star"></ion-icon>
+  </ion-button>
+
+  <ion-button>
+    <ion-icon slot="icon-only" name="bug-outline"></ion-icon>
+  </ion-button>
+
+  <h3>Botão tamanhos</h3>
+  <ion-button>PADRÃO</ion-button>
+  <ion-button size="large">LARGO</ion-button>
+  <ion-button size="small">PEQUENO</ion-button>
+
+
+  <ion-button expand="block" color="danger" (click)="showPageHome()">Página principal</ion-button>
+
+
+</ion-content>

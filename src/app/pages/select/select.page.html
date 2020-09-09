@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Select</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Select básico</ion-list-header>
+    <ion-item>
+      <ion-label>Sexo</ion-label>
+      <ion-select placeholder="Selecione" okText="Ok" cancelText="Tchau">
+        <ion-select-option value="M">Masculino</ion-select-option>
+        <ion-select-option value="F">Feminino</ion-select-option>
+        <ion-select-option value="O">Outros</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Cor</ion-label>
+      <ion-select placeholder="Selecione" value="A" okText="Selecionar" cancelText="Cancelar"> 
+        <ion-select-option value="A">Azul</ion-select-option>
+        <ion-select-option value="L">Lilás</ion-select-option>
+        <ion-select-option value="R">Roxo</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>Select múltiplo</ion-list-header>
+    <ion-item>
+      <ion-label>Frutas</ion-label>
+      <ion-select multiple="true" placeholder="Selecione" value="A" okText="Ok" cancelText="Tchau">
+        <ion-select-option value="M">Morango</ion-select-option>
+        <ion-select-option value="F">Figo</ion-select-option>
+        <ion-select-option value="A">Abacate</ion-select-option>
+        <ion-select-option value="B">Banana</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Animais</ion-label>
+      <ion-select multiple="true"> 
+        <ion-select-option value="A">Anta</ion-select-option>
+        <ion-select-option value="L">Laopardo</ion-select-option>
+        <ion-select-option value="R">Rinoceronte</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>Select customizado</ion-list-header>
+    <ion-item>
+      <ion-label>Alerta</ion-label>
+      <ion-select [interfaceOptions]="customAlertOptions" interface="alert" placeholder="Selecione">
+        <ion-select-option value="M">Morango</ion-select-option>
+        <ion-select-option value="F">Figo</ion-select-option>
+        <ion-select-option value="A">Abacate</ion-select-option>
+        <ion-select-option value="B">Banana</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Popover</ion-label>
+      <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="selecione"> 
+        <ion-select-option value="A">Anta</ion-select-option>
+        <ion-select-option value="L">Laopardo</ion-select-option>
+        <ion-select-option value="R">Rinoceronte</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Action-sheet</ion-label>
+      <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="selecione"> 
+        <ion-select-option value="A">Anta</ion-select-option>
+        <ion-select-option value="L">Laopardo</ion-select-option>
+        <ion-select-option value="R">Rinoceronte</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>
